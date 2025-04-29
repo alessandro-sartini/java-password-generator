@@ -16,30 +16,27 @@ public class PasswordGenerator {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Inserisci il tuo nome");
+        System.out.println("Inserisci il tuo nome:");
 
         nome = sc.nextLine();
-
-        System.out.println("Inserisci il tuo cognome");
+        System.out.println("Inserisci il tuo cognome:");
 
         cognome = sc.nextLine();
-
-        System.out.println("Inserisci il tuo colore preferito");
+        System.out.println("Inserisci il tuo colore preferito:");
 
         colore = sc.nextLine();
-        System.out.println("Inserisci il giorno di nascita");
+        System.out.println("Inserisci il giorno di nascita:");
 
         giornoDiNascita = sc.nextInt();
-
-        System.out.println("Inserisci il mese di nascita");
+        System.out.println("Inserisci il mese di nascita:");
 
         meseDiNascita = sc.nextInt();
-
-        System.out.println("Inserisci l'anno di nascita");
+        System.out.println("Inserisci l'anno di nascita:");
 
         annoDiNascita = sc.nextInt();
         int sommaPsw= annoDiNascita+meseDiNascita+giornoDiNascita;
 
         System.out.println("Password genrata: "+ nome+"-"+cognome+"-"+colore+"-"+sommaPsw);
+        sc.close();
     }
 }
